@@ -11,9 +11,9 @@ import Templates from "@/app/(data)/Templates";
 const HeroSection = () => {
     const router = useRouter();
   return (
-    <div className="h-[90vh] max-w-screen-md mx-auto flex flex-col  justify-center items-center text-center">
-      <div>
-        <h1 className=" text-6xl font-bold text-orange-500 mb-4 ">
+    <div className="h-auto max-w-screen-md mx-auto flex flex-col justify-between  text-center p-5">
+      <div className=" flex flex-col  items-center">
+        <h1 className=" text-6xl  font-bold bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 inline-block text-transparent bg-clip-text mb-4 ">
           {" "}
           AI Content <span className=" text-slate-300">Generator</span>
         </h1>
@@ -22,17 +22,19 @@ const HeroSection = () => {
           social media posts. Say goodbye to writer's block and hello to endless
           creativity.
         </p>
+        <Button className="mt-5 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 w-40 font-semibold text-lg md:text-xl" onClick={() => router.push("/dashboard")} > Get Started</Button>
       </div>
-      <Button className="mt-5 bg-orange-500 hover:bg-orange-600 px-10 md:px-12 py-6 md:py-8 font-semibold text-lg md:text-xl" onClick={() => router.push("/dashboard")} > Get Started</Button>
-      <div className="flex flex-wrap gap-4 mt-10">
+      
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:flex-wrap gap-2 md:gap-4 lg:gap-6  mt-10 t mx-auto ">
       {Templates.map((feature, index) => (
         <FeatureCard
           key={index}
           icon={feature.icon}
           title={feature.name}
           description={feature.desc}
+          slug={feature.slug}
         />
-      )).slice(0, 3)}
+      )).slice(0, 6)}
     </div>
     </div>
   );

@@ -3,6 +3,8 @@
 @tailwind utilities;
 body{
   background-color: #0a2040;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
 }
 
 @layer utilities {
