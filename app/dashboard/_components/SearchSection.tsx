@@ -15,7 +15,7 @@ const SearchSection = ({onSearchInput}: any) => {
         <input
           type="text"
           placeholder="Search"
-          className="bg-primary text-black w-full outline-none placeholder:text-orange-500"
+          className="bg-primary text-black w-full outline-none placeholder:text-orange-500 text-white"
           onChange={(e)=> onSearchInput(e.target.value)}
         />
       </div>
