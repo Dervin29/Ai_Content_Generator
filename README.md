@@ -16,21 +16,42 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# AI Content Generator
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+AI Content Generator is a powerful web application that leverages the Gemini API to generate content based on user-selected templates and topics. Users can easily generate, edit, and save their content, with all generated content stored in a database for future reference.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Template-Based Content Generation**: Users can choose from various templates and topics to generate tailored content using the Gemini API. The generated content is displayed in a rich text editor for further customization.
+- **Content Management**: All generated content is automatically saved to a PostgreSQL database, allowing users to revisit and modify their past creations.
+- **User Activity History**: Users can view a history of their content generation activities, complete with details of the templates used and the content generated.
+- **Error Handling**: Robust error handling ensures smooth operation, providing informative feedback to users in case of issues during content generation or saving.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Next.js**: React framework for server-side rendering and generating static websites.
+- **TypeScript**: Typed JavaScript to enhance code quality and maintainability.
+- **PostgreSQL**: Relational database management system for storing user-generated content.
+- **Drizzle ORM**: Lightweight TypeScript ORM for database operations.
+- **Gemini API**: API for AI-based content generation.
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run this project locally, follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/Ai_Content_Generator.git
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd Ai_Content_Generator
+
+3. **Install Dependencies:**
+   ```bash
+   npm install
+
+## Hosted Link:
+Check out the live version of the app: [GenieWriter](https://ai-content-generator-delta.vercel.app/)
+
