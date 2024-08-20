@@ -13,7 +13,7 @@ interface Templates {
 const FeatureCard: React.FC<Templates> = ({ icon, title, description, slug}) => {
   return (
 
-      <div className="p-5 shadow-md rounded-md  bg-[#050d2b] flex flex-col gap-3 cursor-pointer hover:scale-105 transition-all ease-in-out w-60 h-50 flex-shrink-0 text-center ">
+      <div className="p-5 shadow-md rounded-md  bg-[#050d2b] flex flex-col gap-3 cursor-pointer hover:scale-105 transition-all ease-in-out  flex-shrink-0 text-center ">
         <div className="flex justify-center items-center mb-4">
           <Image src={icon} alt={title} width={50} height={50} />
         </div>

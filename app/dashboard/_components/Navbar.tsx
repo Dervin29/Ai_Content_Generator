@@ -8,13 +8,11 @@ const Navbar = () => {
 
 
   return (
-    <div>
-        <nav className=" flex justify-between items-center p-4 md:p-5 lg:p-6 border-b-[1px]  bg-transparent  mx-5 md:mx-10">
-        <div className=" flex gap-2 items-center justify-center">
-          <Image src="/logo.svg" alt="logo" width={40} height={40} />
-          <h1 className=" font-bold text:md md:text-lg lg:text-xl text-white">GenieWriter</h1>
-        </div>
-      </nav>
+    <div className=" bg-[#050d2b]  rounded-lg w-full ">
+      <div className='flex justify-center items-center gap-4 py-4'>
+        <Image src={"/logo.svg"} width={40} height={40} alt="logo" />
+        <h1 className=' text-2xl font-bold text-slate-300'>GenieWriter</h1>
+      </div>
     </div>
   )
 }

@@ -25,7 +25,7 @@ const HeroSection = () => {
         <Button className="mt-5 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 w-40 font-semibold text-lg md:text-xl" onClick={() => router.push("/dashboard")} > Get Started</Button>
       </div>
       
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:flex-wrap gap-2 md:gap-4 lg:gap-6  mt-10 t mx-auto ">
+      <div className=" grid  sm:grid-cols-2 md:grid-cols-3 md:flex-wrap gap-2 md:gap-4 lg:gap-6  mt-10 t mx-auto ">
       {Templates.map((feature, index) => (
         <FeatureCard
           key={index}
